@@ -1,0 +1,11 @@
+murgi 250 2026-june-24
+feed 2000 2026-february-23
+electricity 1200 2026-july-1
+internet 500 2026-may-02
+chicks 20000 1st_january
+water 1200 23rd_february
+foof 00 12_january
+foof 345 27april
+faru 1000 12
+egg 100 12january
+dim 2345 15july
