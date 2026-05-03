@@ -408,14 +408,14 @@ void employee_screen()
 
     cout << indent << color::blue << "╰──────┴────────────────┴────────────────┴────────────┴──────────╯" << color::reset << endl;
 
-    AddEmployee add_btn;
-    RemoveEmployee remove_btn;
-    to_screen2 back_btn;
-    reset_payment reset_btn;
-    add_btn.draw("bg_blue", "white");
-    remove_btn.draw("bg_red", "white");
-    back_btn.draw("bg_green", "white");
-    reset_btn.draw("bg_yellow", "black");
+     Button* add_btn = new AddEmployee();
+    Button* remove_btn = new RemoveEmployee();
+    Button* back_btn = new to_screen2();
+    Button* reset_btn = new reset_payment();
+    add_btn->draw("bg_blue", "white");
+    remove_btn->draw("bg_red", "white");
+    back_btn->draw("bg_green", "white");
+    reset_btn->draw("bg_yellow", "black");
         for (auto &button : buttons)
     {
 
@@ -432,10 +432,10 @@ void employee_screen()
             cout<<color::reset;
         }
     }
-    buttons.push_back(&add_btn);
-    buttons.push_back(&remove_btn);
-    buttons.push_back(&back_btn);
-    buttons.push_back(&reset_btn);
+    buttons.push_back(add_btn);
+    buttons.push_back(remove_btn);
+    buttons.push_back(back_btn);
+    buttons.push_back(reset_btn);
 
     run(buttons);
 }
