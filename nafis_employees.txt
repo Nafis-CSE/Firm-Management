@@ -1,4 +1,5 @@
-101 Farhan Hosain 12_badda_dhaka 01612354122 1st_april_2026 CEO 200000 1
-102 Nabeel sarwar pocket_gate 01928748711 1st_jnuary manager 120000 1
+101 Farhan Hosain 12_badda_dhaka 01612354122 1st_april_2026 CEO 200000 0
+102 Nabeel sarwar pocket_gate 01928748711 1st_jnuary manager 120000 0
 103 Muhfiquer Rahman rangpur 018927366273 1stFebruary_2026 Cleaner 60000 1
-117 zulfiqar alam Dinajpur 01923453617 1st_may Egg_Collector 50000 0
+117 zulfiqar alam Dinajpur 01923453617 1st_may Egg_Collector 50000 1
+11 Shadman sami Joypurhat 01726242561 10_march_2026 Milker 65000 1

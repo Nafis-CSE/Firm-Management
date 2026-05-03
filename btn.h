@@ -16,9 +16,7 @@ protected:
     bool hit(int x,int y);
     
     virtual void click() = 0;
-    virtual ~Button() =default;
-   
-
+    virtual ~Button() = default;
 };
 
  template<typename... T>
@@ -86,7 +84,6 @@ void run(vector<T>& buttons) {
                 for (auto &b : buttons) {
                     if (b->hit(x, y)) {
                         b->click();
-                        delete b; 
                     }
                 }
             }

@@ -24,7 +24,7 @@ public:
         }
         catch (const invalid_argument &e)
         {
-            cout << color::red << setw(200) << e.what() << string(5, '\n');
+            cout << color::red << setw(195)<<" " << e.what() << string(5, '\n');
             sleep(2);
             cout << setw(200) << color::italic<< color::white << "Enter Item Name: ";
             getline(cin, name);

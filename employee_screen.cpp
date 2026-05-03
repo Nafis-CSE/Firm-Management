@@ -112,7 +112,7 @@ public:
         }
         catch (const invalid_argument &e)
         {
-            cout << color::red << setw(200) << e.what() << string(5, '\n');
+            cout << color::red << setw(195)<<" " << e.what() << string(5, '\n');
             sleep(2);
             cout << setw(200) << color::italic << color::white << "Enter Employee ID: ";
             getline(cin, e_id);
@@ -129,7 +129,7 @@ public:
         }
         catch (const invalid_argument &e)
         {
-            cout << color::red << setw(200) << e.what() << string(5, '\n');
+            cout << color::red << setw(195)<<" " << e.what() << string(5, '\n');
             sleep(2);
             cout << setw(200) << color::italic << color::white << "Enter First Name: ";
             getline(cin, first_name);
@@ -146,7 +146,7 @@ public:
         }
         catch (const invalid_argument &e)
         {
-            cout << color::red << setw(200) << e.what() << string(5, '\n');
+            cout << color::red << setw(195)<<" " << e.what() << string(5, '\n');
             sleep(2);
             cout << setw(200) << color::italic << color::white << "Enter Last Name: ";
             getline(cin, last_name);
@@ -162,7 +162,7 @@ public:
         }
         catch (const invalid_argument &e)
         {
-            cout << color::red << setw(200) << e.what() << string(5, '\n');
+            cout << color::red << setw(195)<<" " << e.what() << string(5, '\n');
             sleep(2);
             cout << setw(200) << color::italic << color::white << "Enter Position: ";
             getline(cin, position);
@@ -177,7 +177,7 @@ public:
         }
         catch (const invalid_argument &e)
         {
-            cout << color::red << setw(200) << e.what() << string(5, '\n');
+            cout << color::red << setw(195)<<" " << e.what() << string(5, '\n');
             sleep(2);
             cout << setw(200) << color::italic << color::white << "Enter Address: ";
             getline(cin, address);
@@ -193,7 +193,7 @@ public:
         }
         catch (const invalid_argument &e)
         {
-            cout << color::red << setw(200) << e.what() << string(5, '\n');
+            cout << color::red << setw(195)<<" " << e.what() << string(5, '\n');
             sleep(2);
             cout << setw(200) << color::italic << color::white << "Enter Phone: ";
             getline(cin, phone);
@@ -210,7 +210,7 @@ public:
         }
         catch (const invalid_argument &e)
         {
-            cout << color::red << setw(200) << e.what() << string(5, '\n');
+            cout << color::red << setw(195)<<" " << e.what() << string(5, '\n');
             sleep(2);
             cout << setw(200) << color::italic << color::white << "Enter Salary: ";
             getline(cin, salary);
@@ -226,7 +226,7 @@ public:
         }
         catch (const invalid_argument &e)
         {
-            cout << color::red << setw(200) << e.what() << string(5, '\n');
+            cout << color::red << setw(195)<<" " << e.what() << string(5, '\n');
             sleep(2);
             cout << setw(200) << color::italic << color::white << "Enter Joining Date: ";
             getline(cin, joining_date);
@@ -234,7 +234,7 @@ public:
         ofstream fout(user_id + "_employees.txt", ios::app);
         if (!fout)
         {
-            cout << setw(200) << color::red << "File open error!" << endl;
+            cout << setw(195) << color::red << "File open error!" << endl;
             return;
         }
         fout << e_id << " " << first_name << " " << last_name << " " << address << " " << phone << " " << joining_date << " " << position << " " << salary << " " << 0  << endl;

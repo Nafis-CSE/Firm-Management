@@ -25,7 +25,7 @@ public:
         }
         catch (const invalid_argument &e)
         {
-            cout << color::red << setw(200) << e.what() << string(5, '\n');
+            cout << color::red << setw(195)<<" " << e.what() << string(5, '\n');
             sleep(2);
             cout << setw(200) << color::italic << color::white << "Enter Item Name: ";
             getline(cin, item);
@@ -41,7 +41,7 @@ public:
         }
         catch (const invalid_argument &e)
         {
-            cout << color::red << setw(200) << e.what() << string(5, '\n');
+            cout << color::red << setw(195)<<" " << e.what() << string(5, '\n');
             sleep(2);
             cout << setw(200) << color::italic << color::white << "Enter Amount: ";
             getline(cin, amount);
@@ -57,7 +57,7 @@ public:
         }
         catch (const invalid_argument &e)
         {
-            cout << color::red << setw(200) << e.what() << string(5, '\n');
+            cout << color::red << setw(195)<<" " << e.what() << string(5, '\n');
             sleep(2);
             cout << setw(200) << color::italic << color::white << "Enter Date (YYYY-MM-DD): ";
             getline(cin, date);
@@ -68,7 +68,7 @@ public:
 
         if (!fout)
         {
-            cout << setw(200) << color::red << "File open error!" << endl;
+            cout << setw(195) << color::red << "File open error!" << endl;
             return;
         }
 

@@ -26,7 +26,7 @@ try{
 
 }
 catch(const invalid_argument& e) {
-        cout << color::red << setw(200) << e.what() << string(5, '\n');
+        cout << color::red << setw(195)<<" " << e.what() << string(5, '\n');
         sleep(2);
         screen1();
     }
@@ -36,7 +36,7 @@ catch(const invalid_argument& e) {
         if (check.is_open())
         {
             check.close();
-            cout <<color::red<< setw(200) << "User already exists! Please login."<<string(5,'\n');
+            cout <<color::red<< setw(195)<<" " << "User already exists! Please login."<<string(5,'\n');
             sleep(2);
             screen1();
         }
@@ -45,7 +45,7 @@ catch(const invalid_argument& e) {
         ofstream fout(filename, ios::binary);
         if (!fout)
         {
-            cout << color::red << setw(200) << "File create error!" << string(5, '\n');
+            cout << color::red << setw(195)<<" " << "File create error!" << string(5, '\n');
              sleep(2);
             screen1();
         }
@@ -55,7 +55,7 @@ catch(const invalid_argument& e) {
         fout.write(password.c_str(), len);
         fout.close();
 
-        cout << setw(200) << color::green<< "Account created successfully!" << string(5, '\n');
+        cout << setw(195) << color::green<< "Account created successfully!" << string(5, '\n');
         screen2();
     }
 };
@@ -101,7 +101,7 @@ public:
         else
         {
 
-            cout <<setw(200) << color::red<< "Wrong Password!"<<string(5,'\n');
+            cout <<setw(195)<<" " << color::red<< "Wrong Password!"<<string(5,'\n');
              sleep(2);
             screen1();
         }
